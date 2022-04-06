@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { Router } from "@reach/router"
+import Accueil from "./components/pages/Accueil"
+import Home from "./components/pages/Home";
+
+
+import Header from "./components/molecules/Header";
+import Languages from "./components/molecules/Languages";
+import Presentation from "./components/molecules/Presentation";
+
+/*
+
+import Presensation from './components/molecules/Presentation'
+
+
+import Header from "./components/molecules/Header";*/
 
 function App() {
+
+  //state 
+  
+
+
+  //compoennt
+  /* 
+   */
+
+  //render
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+        <Accueil path="/"/>
+        <Home path="en"/>
+    </Router>
+  )
 }
 
-export default App;
+export default App
+
+
